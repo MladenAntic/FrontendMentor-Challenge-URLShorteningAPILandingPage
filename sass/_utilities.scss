@@ -1,0 +1,56 @@
+.wrapper {
+  width: 80%;
+  margin: auto;
+  display: flex;
+}
+
+.hide {
+  display: none;
+}
+
+.show {
+  display: flex;
+}
+
+.get-started-btn {
+  border: none;
+  outline: none;
+  background: $Cyan;
+  color: #fff;
+  font-size: 1.125rem;
+  font-weight: 700;
+  padding: 0.9375rem 2.5rem;
+  letter-spacing: 0.0625rem;
+  border-radius: 3.125rem;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+
+  &:hover {
+    background: $Very-Dark-Blue;
+  }
+}
+
+.error {
+  outline: 2px solid $Red;
+}
+
+.copied {
+  background: $Very-Dark-Violet !important;
+  color: #fff;
+}
+
+.cut-text {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  width: 29rem;
+  white-space: nowrap;
+}
+
+@keyframes lds-spinner {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}

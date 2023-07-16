@@ -1,0 +1,186 @@
+#hero {
+  margin-top: 4.6875rem;
+  position: relative;
+  height: 39.0625rem;
+
+  @media screen and (max-width: 62rem) {
+    text-align: center;
+    height: 54.6875rem;
+    margin-top: 3.125rem;
+  }
+
+  .hero__content {
+    @media screen and (max-width: 62rem) {
+      margin: auto;
+      margin-top: 28.125rem;
+    }
+
+    @media screen and (max-width: 48rem) {
+      margin-top: 25rem;
+    }
+
+    @media screen and (max-width: 36rem) {
+      margin-top: 20.3125rem;
+    }
+
+    @media screen and (max-width: 28.125rem) {
+      margin-top: 18.75rem;
+    }
+
+    .hero__title {
+      font-size: 5rem;
+      line-height: 1.25;
+      color: $Very-Dark-Blue;
+      font-weight: 700;
+      margin-bottom: 0.3125rem;
+
+      @media screen and (max-width: 87.5rem) {
+        font-size: 4rem;
+      }
+
+      @media screen and (max-width: 75rem) {
+        font-size: 3rem;
+      }
+
+      @media screen and (max-width: 28.125rem) {
+        font-size: 2rem;
+      }
+    }
+
+    .hero__description {
+      margin-bottom: 1.875rem;
+      color: $Grayish-Violet;
+      font-size: 1.5rem;
+      width: 60%;
+
+      @media screen and (max-width: 87.5rem) {
+        font-size: 1.125rem;
+      }
+
+      @media screen and (max-width: 75rem) {
+        font-size: 1rem;
+      }
+
+      @media screen and (max-width: 62rem) {
+        width: 80%;
+        margin: 0 auto 1.875rem;
+      }
+
+      @media screen and (max-width: 28.125rem) {
+        font-size: 0.875rem;
+      }
+    }
+  }
+
+  .hero__illustration {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 40.625rem;
+
+    @media screen and (max-width: 75rem) {
+      top: 5%;
+      width: 37.5rem;
+    }
+
+    @media screen and (max-width: 62rem) {
+      right: unset;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    @media screen and (max-width: 48rem) {
+      width: 31.25rem;
+      margin: auto;
+    }
+
+    @media screen and (max-width: 36rem) {
+      width: 25rem;
+    }
+
+    @media screen and (max-width: 28.125rem) {
+      width: 90%;
+    }
+  }
+
+  .hero__linkShortener {
+    position: absolute;
+    bottom: -12%;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    gap: 1.25rem;
+    padding: 3.125rem;
+    border-radius: 0.625rem;
+    background: url("../images/bg-shorten-desktop.svg") no-repeat center
+      center/cover;
+    background-color: $Dark-Violet;
+
+    @media screen and (max-width: 62rem) {
+      bottom: -14%;
+      flex-direction: column;
+    }
+
+    @media screen and (max-width: 48rem) {
+      background: url("../images/bg-shorten-mobile.svg") no-repeat center
+        center/cover;
+      background-color: $Dark-Violet;
+      padding: 1.875rem;
+    }
+
+    .hero__textInput {
+      border: none;
+      flex: 1;
+      height: 3.75rem;
+      padding-left: 1.5625rem;
+      font-size: 1.125rem;
+      border-radius: 0.3125rem;
+
+      @media screen and (max-width: 62rem) {
+        font-size: 0.875rem;
+        width: 100%;
+        padding: 1.5625rem;
+      }
+    }
+
+    .hero__shortenLinkBtn {
+      border: none;
+      outline: none;
+      background: $Cyan;
+      color: #fff;
+      font-size: 1.125rem;
+      font-weight: 700;
+      padding: 0 3.125rem;
+      height: 3.75rem;
+      border-radius: 0.3125rem;
+      cursor: pointer;
+      transition: 0.2s ease-in-out;
+
+      &:hover {
+        background: hsl(180, 66%, 70%);
+      }
+
+      @media screen and (max-width: 62rem) {
+        padding: 0 1.5625rem;
+        width: 100%;
+      }
+    }
+
+    .hero__errorMessage {
+      color: $Red;
+      position: absolute;
+      bottom: 10%;
+      font-style: italic;
+
+      display: none;
+
+      @media screen and (max-width: 62rem) {
+        bottom: 5%;
+      }
+
+      @media screen and (max-width: 48rem) {
+        bottom: 0;
+      }
+    }
+  }
+}

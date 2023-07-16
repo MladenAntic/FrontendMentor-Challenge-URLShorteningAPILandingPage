@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>URL Shortening Landing Page</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+    <header id="header" class="header">
+      <div class="wrapper">
+        <nav class="header__nav">
+          <img src="images/logo.svg" alt="Shortly Logo" />
+          <ul>
+            <li class="header__desktopItem"><a href="#">Features</a></li>
+            <li class="header__desktopItem"><a href="#">Pricing</a></li>
+            <li class="header__desktopItem"><a href="#">Resources</a></li>
+            <li class="header__mobileItem hide">
+              <div class="header__divider"></div>
+            </li>
+            <li class="header__mobileItem hide">
+              <button class="header__mobileLogin">Login</button>
+            </li>
+            <li class="header__mobileItem hide">
+              <button class="header__mobileSignUp">SignUp</button>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="header__join">
+          <button class="header__btn header__login">Login</button>
+          <button class="header__btn header__signUp">Sign Up</button>
+        </div>
+
+        <!-- Hamburger Menu -->
+        <button id="hamburger-btn" class="header__hamburger" type="button">
+          <span class="header__hamburgerBar header__top"></span>
+          <span class="header__hamburgerBar header__middle"></span>
+          <span class="header__hamburgerBar header__bottom"></span>
+        </button>
+      </div>
+    </header>
+
+    <section id="hero" class="hero">
+      <div class="wrapper">
+        <div class="hero__content">
+          <h1 class="hero__title">
+            More than just <br />
+            shorter links
+          </h1>
+          <p class="hero__description">
+            Build your brand's recognition and get detailed insights on how your
+            links are performing
+          </p>
+          <button class="get-started-btn">Get Started</button>
+        </div>
+
+        <img
+          src="images/illustration-working.svg"
+          class="hero__illustration"
+          alt="Illustartion Working"
+        />
+
+        <div class="hero__linkShortener">
+          <input
+            type="text"
+            id="textInput"
+            class="hero__textInput"
+            placeholder="Shorten a link here..."
+          />
+          <button class="hero__shortenLinkBtn" id="shorten-btn">
+            Shorten It!
+          </button>
+          <span class="hero__errorMessage" id="error-message"
+            >Please add link</span
+          >
+        </div>
+      </div>
+    </section>
+
+    <section id="statistics" class="statistics">
+      <div class="wrapper">
+        <div
+          class="statistics__shortenedLinksList"
+          id="shortenedLinksList"
+        ></div>
+
+        <h2 class="statistics__title">Advanced Statistics</h2>
+        <p class="statistics__description">
+          Track how your links are performing across the web with our advanced
+          statistics dashboard
+        </p>
+
+        <div class="statistics__features">
+          <div class="statistics__featureWrapper">
+            <div class="statistics__image">
+              <img
+                src="images/icon-brand-recognition.svg"
+                alt="Icon Brand Recognition"
+              />
+            </div>
+            <h3>Brand Recognition</h3>
+            <p>
+              Boost your brand recognition with each click. Generic links don't
+              mean a thing. Branded links help instil confidence in your
+              content.
+            </p>
+          </div>
+
+          <div class="statistics__connector"></div>
+
+          <div class="statistics__featureWrapper">
+            <div class="statistics__image">
+              <img
+                src="images/icon-detailed-records.svg"
+                alt="Icon Detailed Records"
+              />
+            </div>
+            <h3>Detailed Records</h3>
+            <p>
+              Gain insights into who is clicking your links. Knowing when and
+              where people engage with your content helps inform better
+              decisions.
+            </p>
+          </div>
+
+          <div class="statistics__connector"></div>
+
+          <div class="statistics__featureWrapper">
+            <div class="statistics__image">
+              <img
+                src="images/icon-fully-customizable.svg"
+                alt="Icon Fully Customizable"
+              />
+            </div>
+            <h3>Fully Customizable</h3>
+            <p>
+              Improve brand awareness and content discoverability through
+              customizable links, supercharging audience engagement.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="boost" class="boost">
+      <h2>Boost Your Links Today</h2>
+      <button class="get-started-btn">Get Started</button>
+    </section>
+
+    <footer id="footer" class="footer">
+      <div class="wrapper">
+        <img src="images/footer-logo.svg" alt="Footer Logo" />
+
+        <ul>
+          <li class="footer__navTitle"><a href="#">Features</a></li>
+          <li><a href="#">Link Shortening</a></li>
+          <li><a href="#">Branded Links</a></li>
+          <li><a href="#">Analytics</a></li>
+        </ul>
+
+        <ul>
+          <li class="footer__navTitle"><a href="#">Resources</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Developers</a></li>
+          <li><a href="#">Support</a></li>
+        </ul>
+
+        <ul>
+          <li class="footer__navTitle"><a href="#">Company</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Our Team</a></li>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+
+        <div class="footer__social">
+          <a href="#">
+            <i class="fa-brands fa-square-facebook"></i>
+          </a>
+          <a href="#">
+            <i class="fa-brands fa-twitter"></i>
+          </a>
+          <a href="#">
+            <i class="fa-brands fa-pinterest"></i>
+          </a>
+          <a href="#">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+        </div>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>

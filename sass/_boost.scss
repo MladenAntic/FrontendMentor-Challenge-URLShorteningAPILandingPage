@@ -1,0 +1,33 @@
+#boost {
+  text-align: center;
+  padding: 4.6875rem;
+  background: url("../images/bg-boost-desktop.svg") no-repeat center
+    center/cover;
+  background-color: $Dark-Violet;
+
+  @media screen and (max-width: 48rem) {
+    background: url("../images/bg-boost-mobile.svg") no-repeat center
+    center/cover;
+    background-color: $Dark-Violet;
+}
+
+  h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1.25rem;
+    color: #fff;
+
+    @media screen and (max-width: 48rem) {
+        font-size: 2rem;
+    }
+
+    @media screen and (max-width: 36rem) {
+        font-size: 1.25rem;
+    }
+  }
+
+  .get-started-btn {
+    &:hover {
+      background: hsl(180, 66%, 70%);
+    }
+  }
+}
